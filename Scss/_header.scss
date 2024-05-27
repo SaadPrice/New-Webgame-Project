@@ -1,0 +1,50 @@
+// _header.scss
+header {
+    color: $text-color;
+    @include flex-center;
+    justify-content: space-between;
+    
+    h2 {
+      font-size: $font-size-header;
+    }
+  
+    .column {
+      display: flex;
+      align-items: center;
+  
+      span {
+        font-size: $font-size-span;
+        margin-right: 15px;
+      }
+    }
+  
+    .keys-checkbox {
+      input {
+        @include border-radius(30px);
+        background: #4b4b4b;
+        cursor: pointer;
+        appearance: none;
+        width: 60px;
+        height: 20px;
+        position: relative;
+  
+        &::before {
+          content: "";
+          height: 10px;
+          width: 20px;
+          position: absolute;
+          background: #8c8c8c;
+          border-radius: inherit;
+          top: 50%;
+          left: 5px;
+          transform: translateY(-50%);
+          transition: all 0.3s ease;
+        }
+  
+        &:checked::before {
+          left: 35px;
+        }
+      }
+    }
+  }
+  

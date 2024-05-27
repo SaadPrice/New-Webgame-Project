@@ -1,0 +1,16 @@
+// _mixins.scss
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin box-shadow($color) {
+    box-shadow: 0 4px 6px $color;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  
